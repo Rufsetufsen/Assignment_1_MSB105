@@ -22,11 +22,33 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 ## Introduction
 
-What is this paper about?
-What is discussed?
-Why is it of any consequence?
+This mini-paper is based on the university lecture "Robust and Reliable Science" (Gjestland) which highlights the need for reproducibility in research.
 
-## Literature review
+Definer research reproducibility og dets viktighet.
+Lag kobling mellom etterprøvbar vitenskap og økonomi/data science.
+Viktighet for godt beslutningsgrunnlag i policymaking, etc.
+
+## The Reproducibility Crisis
+
+Sett lys på problemer nevnt i foredraget: Publication bias, dårlig dokumentasjon.
+Eksempel fra psykologifeltet.
+Hent kilder fra økonomifaget.
+
+## Principles of Robust and Reliable Science
+
+Robuste metoder Transparency (datadeling, open source kode)
+
+## Implications for Data Science in Economics
+
+Why reproducibility matters for policy advice, forecasting etc.
+Case examples (psychology vs. econ) Reproducbility tools (focus on quarto)
+
+## Conclusion
+
+Oppsummering av nøkkelpunkter.
+Reproducibility crisis is not only caused by technical limitations, but also cultural issues (publication bias, incentives).
+
+## Literature review / Further reading(?)
 
 Smart stuff from others about the topic.
 
