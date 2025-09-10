@@ -22,7 +22,13 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 ## Introduction
 
-This mini-paper is based on the university lecture "Robust and Reliable Science" (Gjestland) which highlights the need for reproducibility in research.
+This mini-paper is based on the university lecture "Robust and Reliable Science" [@gjestland2024] (Gjestland) which highlights the need for reproducibility in research.
+
+In recent years, scientific research has faced scrutiny due to concerns about the reproducibility of published findings [@mcnutt2014 page 229].
+The term "*reproducibility*" refers to the ability of independent researchers to obtain the same scientific results when using the original data and scientific methods.
+Reproducibility is also a necessary condition for *replicable* research, which involves *"The confirmation of results and conclusions from one study obtained independently in another."* [@jasny2011b p 1225].
+
+Both reproducibility and replicability are central to the credibility of empirical research, yet evidence suggests that a large share of published research across many academic disciplines fail to meet these standards.
 
 Definer research reproducibility og dets viktighet.
 Lag kobling mellom etterprøvbar vitenskap og økonomi/data science.
@@ -66,8 +72,6 @@ On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
 -   Should replicability be the norm or is this to much to ask for now?
 -   Can Quarto documents help with reproducibility?
 -   What problems remains and how can these be solved?
-
-## Conclusion
 
 ## References
 
