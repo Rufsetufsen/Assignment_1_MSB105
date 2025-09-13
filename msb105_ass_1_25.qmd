@@ -18,23 +18,30 @@ format:
 bibliography: reproducibility.bib
 nocite: '@*'
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
+editor: 
+  markdown: 
+    wrap: sentence
 ---
 
 ## Introduction
 
 This mini-paper is based on the university lecture "Robust and Reliable Science" [@gjestland2024] (Gjestland) which highlights the need for reproducibility in research.
 
-In recent years, scientific research has faced scrutiny due to concerns about the reproducibility of published findings [@mcnutt2014 page 229].
+In recent years, scientific research has come under scrutiny due to concerns about the reproducibility of published findings [@mcnutt2014 page 229].
 The term "*reproducibility*" refers to the ability of independent researchers to obtain the same scientific results when using the original data and scientific methods.
 Reproducibility is also a necessary condition for *replicable* research, which involves *"The confirmation of results and conclusions from one study obtained independently in another."* [@jasny2011b p 1225].
 
-Both reproducibility and replicability are central to the credibility of empirical research, yet evidence suggests that a large share of published research across many academic disciplines fail to meet these standards.
+Both reproducibility and replicability are central to the credibility of empirical research, yet evidence suggests that quite a large share of published research across many academic disciplines fail to meet these standards.
 
 Definer research reproducibility og dets viktighet.
 Lag kobling mellom etterprøvbar vitenskap og økonomi/data science.
 Viktighet for godt beslutningsgrunnlag i policymaking, etc.
 
 ## The Reproducibility Crisis
+
+The reproducibility crisis first became visible in the academic fields of psychology and medicine before it reached economics.
+The open Science Collaboration [@opensciencecollaboration2015] found that only 36 percent of their tested psychology studies were replicable.
+In preclinical cancer research, Begley and Ellis @begleyRaiseStandardsPreclinical2012 showed that only a small fraction of results could be reproduced and/or scientifically validated.
 
 Sett lys på problemer nevnt i foredraget: Publication bias, dårlig dokumentasjon.
 Eksempel fra psykologifeltet.
