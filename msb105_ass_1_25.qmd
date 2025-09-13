@@ -9,7 +9,7 @@ format:
   html: default
   typst:
     papersize: a4
-  pdf:
+  pdf: 
     documentclass: article
     number-sections: true
     keep-tex: true
@@ -25,7 +25,7 @@ editor:
 
 ## Introduction
 
-This mini-paper is based on the university lecture "Robust and Reliable Science" [@gjestland2024] (Gjestland) which highlights the need for reproducibility in research.
+This mini-paper is based on the university lecture "Robust and Reliable Science" [@gjestland2024] which highlights the need for reproducibility in research.
 
 In recent years, scientific research has come under scrutiny due to concerns about the reproducibility of published findings [@mcnutt2014 page 229].
 The term "*reproducibility*" refers to the ability of independent researchers to obtain the same scientific results when using the original data and scientific methods.
@@ -40,8 +40,18 @@ Viktighet for godt beslutningsgrunnlag i policymaking, etc.
 ## The Reproducibility Crisis
 
 The reproducibility crisis first became visible in the academic fields of psychology and medicine before it reached economics.
-The open Science Collaboration [@opensciencecollaboration2015] found that only 36 percent of their tested psychology studies were replicable.
-In preclinical cancer research, Begley and Ellis @begleyRaiseStandardsPreclinical2012 showed that only a small fraction of results could be reproduced and/or scientifically validated.
+The open Science @opensciencecollaboration2015 found that only 36 percent of their tested psychology studies were replicable.
+In preclinical cancer research, @begleyRaiseStandardsPreclinical2012 showed that only a small fraction of results could be reproduced and/or scientifically validated.
+
+The field of Economics has not been spared either.
+@camerer2016 attempted to replicate 18 experimental studies and found that only 61 percent showed effects in the same direction, and even then the average replicated effect size was only 66 percent of the original.
+@miguel2021 emphasises that selective publishing and inacessible datasets create barriers to replication.
+The reproducibility issue seems to be a composite of both inacessible data and statistics, but also culture and incentives.
+"Significant" results get rewarded with publishing, while null-findings get ignored and end up in a desk drawer somewhere.
+Publication bias incentivizes cherry-picking of results to obtain p-values below 0,05 [@miguel2021 pp 194].
+The "positive outcome bias" is not only distorting the scientific literature, but it can also pressure scientists to fabricate and falsify their data [@fanelli2012].
+
+For an academic discipline like economics where evidence is used to justify political reforms, this can have lasting real-world consequences for millions of people, and it creates a real credibility problem for the field.
 
 Sett lys på problemer nevnt i foredraget: Publication bias, dårlig dokumentasjon.
 Eksempel fra psykologifeltet.
