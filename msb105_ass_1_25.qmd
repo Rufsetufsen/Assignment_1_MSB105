@@ -68,6 +68,13 @@ This means that:
 
 @gjestland2024
 
+So how do we achieve this?
+I'd like to condense the contents from the lecture into three principles:
+
+-   Transparency: Gathered data and code must be shared whenever possible @stodden2010 ; @gentleman2007b .
+-   More robust methods: Reliance on p-values alone is insufficient. "All roads lead to Rome", and many roads lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics @gelman.
+-   Cultural change: incentives should reward replicability and openness. Normalize publishing research with negative outcomes to limit the effects of positive outcome bias.
+
 Robuste metoder Transparency (datadeling, open source kode)
 
 ## Implications for Data Science in Economics
