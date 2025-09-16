@@ -38,6 +38,7 @@ Both reproducibility and replicability are central to the credibility of empiric
 The reproducibility crisis first became visible in the academic fields of psychology and medicine before it reached economics.
 The open Science @opensciencecollaboration2015 found that only 36 percent of their tested psychology studies were replicable.
 In preclinical cancer research, @begleyRaiseStandardsPreclinical2012 showed that only a small fraction of results could be reproduced and/or scientifically validated.
+@simmons2011 presents how easy it is to accumulate statistically significant evidence for demonstrably false hypotheses.
 
 The field of Economics has not been spared either.
 @camerer2016 attempted to replicate 18 experimental studies and found that only 61 percent showed effects in the same direction, and even then the average replicated effect size was only 66 percent of the original.
@@ -84,7 +85,7 @@ If results remain non-reproducible, the advice risks being wrong.
 Still, there is hope on the horizon.
 Economics journals now increasingly require data and code archives, and the general consensus in academic circles seems to be trending towards more transparency and reproducibility in research, even on an institutional level [@christensen2018 p.969].
 Lack of access to computer programs used to be a big hurdle when it came to replicating economic research [@dewald1986b p.588] but now, open source tools like Quarto documents and RStudio now exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
-This allows peers to inspect the full workflow, not just the end product, and whatever code/data the original researcher chose to disclose.
+This allows peers to inspect the full workflow, not just the end product, and whatever code/data the original researcher made the effort to clean up and share.
 However, technical tools do not solve the full issue with publication bias and type 1 errors, and reproducibility still depends on software versions (e.g R-version, packages used, hardware etc).
 
 ## Discussion
@@ -95,10 +96,11 @@ There are simply too many variables at play that could affect the end result of 
 However, I still believe that it should be possible to *try* to replicate a study.
 It is too much to ask that the scientific community blindly accepts results without being able to test the theories themselves.
 I would therefore say that *reproducibility* should be the norm.
+Even for researchers who care less about idealism and openness, working reproducibly can be beneficial [@markowetz2015a].
 
 So how do we get there?
 For one, making powerful tools like RStudio and Quarto documents free, open source and accessible to everyone is a big step.
-Including full datasets, live code blocks and the end result in the same living quarto document makes the process transparent and easy to reproduce, given adherance to robust research principles (like including version numbers and all packages used).
+Including full datasets, live code blocks and the end result in the same computable Quarto document makes the process transparent and easy to reproduce, given adherance to robust research principles (like including version numbers and all packages used).
 
 ## Conclusion
 
@@ -115,7 +117,13 @@ New tools like Quarto and RStudio make research workflows transparent and easier
 Change also needs to happen on an institutional level.
 Scientific journals and universities must value and prioritize openness and strive towards replicability if robust and reliable science is to become a norm.
 
-## Literature review / Further reading(?)
+## Further reading
+
+For readers interested in a broader perspective on the topic, I've compiled a list of several other contributions of note.
+
+@ioannidis2005b provides a disturbing argument on how most research claims are likely false, and the implications of this.
+
+For those wishing to take the first steps towards robust an reliable science, @ellis2017 provides guidelines and general principles on sharing data for collaboration.
 
 Smart stuff from others about the topic.
 
@@ -127,12 +135,6 @@ Example:
 
 @gentleman2005 argues that bla bla bla.
 On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
-
-## Discussion of the reseach question
-
--   Should replicability be the norm or is this to much to ask for now?
--   Can Quarto documents help with reproducibility?
--   What problems remains and how can these be solved?
 
 ## Software used
 
