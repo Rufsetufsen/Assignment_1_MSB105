@@ -33,10 +33,6 @@ Reproducibility is also a necessary condition for *replicable* research, which i
 
 Both reproducibility and replicability are central to the credibility of empirical research, yet evidence suggests that quite a large share of published research across many academic disciplines fail to meet these standards.
 
-Definer research reproducibility og dets viktighet.
-Lag kobling mellom etterprøvbar vitenskap og økonomi/data science.
-Viktighet for godt beslutningsgrunnlag i policymaking, etc.
-
 ## The Reproducibility Crisis
 
 The reproducibility crisis first became visible in the academic fields of psychology and medicine before it reached economics.
@@ -55,10 +51,10 @@ For an academic discipline like economics where evidence is used to justify poli
 
 ## Principles of Robust and Reliable Science
 
-*"Robust and reliable research is **the foundation of all scientific development** and progress, which depends critically on the ability of investigators to build on prior work."* [@gjestland2024]
+*"Robust and reliable research is **the foundation of all scientific development** and progress, which depends critically on the ability of investigators to build on prior work."* [@gjestland2024].
 
 So what is robust and reliable research?
-The wise man doesn't feel the need to invent the wheel twice, so I choose to use the same definition as @bollen2015: [they] *"view robust scientific* *findings as ones that are reproducible, replicable, and generalizable."*
+The wise man pacdoesn't feel the need to invent the wheel twice, so I choose to use the same definition as @bollen2015: [they] *"view robust scientific* *findings as ones that are reproducible, replicable, and generalizable."*
 
 This means that:
 
@@ -75,12 +71,21 @@ I'd like to condense the contents from the lecture into three principles:
 -   More robust methods: Reliance on p-values alone is insufficient. "All roads lead to Rome", and many roads lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics @gelman.
 -   Cultural change: incentives should reward replicability and openness. Normalize publishing research with negative outcomes to limit the effects of positive outcome bias.
 
-Robuste metoder Transparency (datadeling, open source kode)
+The effort put into [@klein2018b] shows that collaboration and openness about the scientific process can raise standards.
+Still, without changes in publishing policies and funding criteria, these efforts risk staying a minority.
 
 ## Implications for Data Science in Economics
 
-Why reproducibility matters for policy advice, forecasting etc.
-Case examples (psychology vs. econ) Reproducbility tools (focus on quarto)
+For economists, reproducibility is a safeguard against policy failure.
+Research influences taxes, welfare systems and development aid.
+If results remain non-reproducible, the advice risks being wrong.
+@deaton2010 argues that poorly designed studies in economics lead to misleading conclusions, sometimes with direct consequences for policymaking.
+
+Still, there is hope on the horizon.
+Economics journals now increasingly require data and code archives, and the general consensus in academic circles seems to be trending towards more transparency and reproducibility in research, even on an institutional level [@christensen2018 p.969].
+Tools like Quarto documents and RStudio now exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
+This allows peers to inspect the full workflow, not just the end product, and whatever code/data the original researcher chose to disclose.
+However, technical tools do not solve the full issue with publication bias and type 1 errors, and reproducibility still depends on software versions (e.g R-version, packages used, hardware etc).
 
 ## Conclusion
 
@@ -106,9 +111,17 @@ On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
 -   Can Quarto documents help with reproducibility?
 -   What problems remains and how can these be solved?
 
+## Software used
+
+R version 4.5.1
+
+Arnstein går gjennom korleis sitere package 17.09.
+
 ## References
 
 and
 
--   Version number and reference to packages used
+-   Version number and reference to packages used(
 -   R version used
+
+## 
