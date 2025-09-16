@@ -83,14 +83,37 @@ If results remain non-reproducible, the advice risks being wrong.
 
 Still, there is hope on the horizon.
 Economics journals now increasingly require data and code archives, and the general consensus in academic circles seems to be trending towards more transparency and reproducibility in research, even on an institutional level [@christensen2018 p.969].
-Tools like Quarto documents and RStudio now exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
+Lack of access to computer programs used to be a big hurdle when it came to replicating economic research [@dewald1986b p.588] but now, open source tools like Quarto documents and RStudio now exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
 This allows peers to inspect the full workflow, not just the end product, and whatever code/data the original researcher chose to disclose.
 However, technical tools do not solve the full issue with publication bias and type 1 errors, and reproducibility still depends on software versions (e.g R-version, packages used, hardware etc).
 
+## Discussion
+
+Should replication be the norm in science?
+In theory: yes, but in practice, replication of every single scientific study would be unrealistic.
+There are simply too many variables at play that could affect the end result of the study, even if the instructions are followed to a tee.
+However, I still believe that it should be possible to *try* to replicate a study.
+It is too much to ask that the scientific community blindly accepts results without being able to test the theories themselves.
+I would therefore say that *reproducibility* should be the norm.
+
+So how do we get there?
+For one, making powerful tools like RStudio and Quarto documents free, open source and accessible to everyone is a big step.
+Including full datasets, live code blocks and the end result in the same living quarto document makes the process transparent and easy to reproduce, given adherance to robust research principles (like including version numbers and all packages used).
+
 ## Conclusion
 
-Oppsummering av nøkkelpunkter.
-Reproducibility crisis is not only caused by technical limitations, but also cultural issues (publication bias, incentives).
+The reproducibility crisis shows that science suffers from weaknesses both of cultural and technical origin.
+Technical barriers such as missing and/or inacessible data and poor documentation undermine reproducibility of research.
+Cultural barriers like publication bias, a preference for "positive" findings and a lack of incentives for replication reinforce this problem.
+
+For economics and data science, these weak spots are especially consequential.
+Research in these fields directly shape public policy and decisions on a macro level.
+If the underlying evidence cannot be reproduced, it cannot be fully trusted either.
+Reproducibility should therefore be treated as a baseline, while replication remains a gold standard to test whether findings are general and robust (although actual replication of research seems to be a rarity).
+
+New tools like Quarto and RStudio make research workflows transparent and easier to inspect or peer-review, but no technical tool can resolve the underlying incentive problems in modern research.
+Change also needs to happen on an institutional level.
+Scientific journals and universities must value and prioritize openness and strive towards replicability if robust and reliable science is to become a norm.
 
 ## Literature review / Further reading(?)
 
