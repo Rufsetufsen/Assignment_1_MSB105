@@ -16,7 +16,6 @@ format:
     papersize: A4
     fig-pos: "H"
 bibliography: reproducibility.bib
-nocite: '@*'
 abstract: "The scientific community has in recent years faced scrutiny due to a lack of reproducibility in published studies. This paper iscuss the implications of this reproducibility crisis, angled especially towards the fields of economics, and the path from here on out. The focus of this paper is not just on the technical hurdles between the current status and full reproducibility, but also the cultural aspects that lead us there. As it turns out, positive outcome biases and type 1 errors cannot be easily solved by new technology, and change needs to happen on a more institutional level. Further, I discuss how access to powerful computable documents such as Quarto documents in RStudio help us on the way towards reproducibility and robust science."
 editor: 
   markdown: 
@@ -70,7 +69,7 @@ So how do we achieve this?
 I'd like to summarize the contents from the lecture (with some additional sources) and structure them into three principles:
 
 -   Transparency: Gathered data and code must be shared whenever possible @stodden2010 ; @gentleman2007b .
--   More robust methods: Reliance on p-values alone is insufficient. "All roads lead to Rome", and many roads lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics @gelman2013.
+-   More robust methods: Reliance on p-values alone is insufficient. "All roads lead to Rome", and almost as many lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics @gelman2013.
 -   Cultural change: incentives should reward replicability and openness. Normalize publishing research with negative outcomes to limit the effects of positive outcome bias @nosek2012.
 
 The effort put into [@klein2018b] shows that collaboration and openness about the scientific process can raise standards.
@@ -121,21 +120,14 @@ Scientific journals and universities must value and prioritize openness and stri
 ## Further reading
 
 For readers interested in a broader perspective on the topic, I've compiled a short list of several other contributions of note.
-
 @ioannidis2005b provides an argument on how most research claims are likely false, and the implications of this.
-
-For those wishing to take the first steps towards robust an reliable science, @ellis2017 provides guidelines and general principles on sharing data for collaboration.
+For researchers wishing to take the first steps towards robust an reliable science, @ellis2017 provides guidelines and general principles on sharing data for collaboration.
 @munafo2017 outline a "manifesto" for reproducible science across disciplines.
 
 ## Software Citations
 
 -   R version 4.5.1, with loaded packages: "Base", "datasets", "graphics", "grDevices", "methods", "stats", R Core Team (2025). \_R: A Language and Environment for Statistical Computing\_. R Foundation for Statistical Computing, Vienna, Austria. \<https://www.R-project.org/\>.
+-   RStudio 2025.9.0.387, release "Cucumberleaf Sunflower". Posit team (2025). RStudio: Integrated Development Environment for R. Posit Software, PBC, Boston, MA. URL http://www.posit.co/.
+-   Running under: Windows 11 x64 (build 26100).
 
 ## References
-
-and
-
--   Version number and reference to packages used(
--   R version used
-
-## 
