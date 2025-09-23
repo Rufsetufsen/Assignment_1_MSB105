@@ -5,17 +5,20 @@ date: last-modified
 date-format: "dddd D MMM, YYYY"
 csl: apa7.csl
 lang: en-GB
+citeproc: true
+papersize: a4
+number-sections: true
 format:
   html: default
-  typst:
-    papersize: a4
+  typst: default
   pdf: 
     documentclass: article
-    number-sections: true
     keep-tex: true
     papersize: A4
     fig-pos: "H"
-bibliography: reproducibility.bib
+bibliography: 
+  - reproducibility_KT.bib
+  - reproducibility_ag.bib
 abstract: "The scientific community has in recent years faced scrutiny due to a lack of reproducibility in published studies. This paper iscuss the implications of this reproducibility crisis, angled especially towards the fields of economics, and the path from here on out. The focus of this paper is not just on the technical hurdles between the current status and full reproducibility, but also the cultural aspects that lead us there. As it turns out, positive outcome biases and type 1 errors cannot be easily solved by new technology, and change needs to happen on a more institutional level. Further, I discuss how access to powerful computable documents such as Quarto documents in RStudio help us on the way towards reproducibility and robust science."
 editor: 
   markdown: 
