@@ -14,12 +14,12 @@ format:
   pdf: 
     documentclass: article
     keep-tex: true
-    papersize: A4
     fig-pos: "H"
+    out-file: "msb105_ass_1_25_tex.pdf"
+  docx: default
 bibliography: 
-  - reproducibility_KT.bib
-  - reproducibility_ag.bib
-abstract: "The scientific community has in recent years faced scrutiny due to a lack of reproducibility in published studies. This paper iscuss the implications of this reproducibility crisis, angled especially towards the fields of economics, and the path from here on out. The focus of this paper is not just on the technical hurdles between the current status and full reproducibility, but also the cultural aspects that lead us there. As it turns out, positive outcome biases and type 1 errors cannot be easily solved by new technology, and change needs to happen on a more institutional level. Further, I discuss how access to powerful computable documents such as Quarto documents in RStudio help us on the way towards reproducibility and robust science."
+  - reproducibility.bib
+abstract: "The scientific community has in recent years faced scrutiny due to a lack of reproducibility in published studies. This paper discuss the implications of this reproducibility crisis, angled especially towards the fields of economics, and the path from here on out. The focus of this paper is not just on the technical hurdles between the current status and full reproducibility, but also the cultural aspects that lead us there. As it turns out, positive outcome biases and type 1 errors cannot be easily solved by new technology, and change needs to happen on a more institutional level. Further, I discuss how access to powerful computable documents such as Quarto documents in RStudio help us on the way towards reproducibility and robust science."
 editor: 
   markdown: 
     wrap: sentence
@@ -30,8 +30,10 @@ editor:
 This mini-paper is based on the university lecture "Robust and Reliable Science" [@gjestland2024] which highlights the need for reproducibility in research.
 
 In recent years, scientific research has come under scrutiny due to concerns about the reproducibility of published findings [@mcnutt2014 page 229].
-The term "*reproducibility*" refers to the ability of independent researchers to obtain the same scientific results when using the original data and scientific methods.
-Reproducibility is also a necessary condition for *replicable* research, which involves *"The confirmation of results and conclusions from one study obtained independently in another."* [@jasny2011b p 1225].
+The term *reproducibility* refers to the ability of independent researchers to obtain the same scientific results when using the original data and the same scientific methods.
+Reproducibility is also a necessary condition for *replicable* research, which involves 
+
+> “The confirmation of results and conclusions from one study obtained independently in another.” [@jasny2011b p 1225].
 
 Both reproducibility and replicability are central to the credibility of empirical research, yet evidence suggests that quite a large share of published research across many academic disciplines fail to meet these standards.
 
@@ -55,27 +57,24 @@ For an academic discipline like economics or political science where evidence is
 
 ## Principles of Robust and Reliable Science
 
-*"Robust and reliable research is **the foundation of all scientific development** and progress, which depends critically on the ability of investigators to build on prior work."* [@gjestland2024].
+> “Robust and reliable research is the foundation of all scientific development and progress, which depends critically on the ability of investigators to build on prior work.” [@nsfDear].
 
-So what is robust and reliable research?
-I choose to use the same definition as @bollen2015 who: *"view robust scientific* *findings as ones that are reproducible, replicable, and generalizable."*
+@bollen2015 view robust scientific findings as ones that are reproducible, replicable, and generalizable.
 
-This means that:
+According to @bollen2015 this means that:
 
 1.  A researcher should be able to duplicate the results from a prior study with the same method and materials as the original researcher (reproducibility).
 2.  A researcher should be able to duplicate the results from a prior study with the same method and collect new results using different data (replicability).
 3.  The results from the research should be able to be generalized across other similar contexts (generalizability).
 
-@gjestland2024
-
 So how do we achieve this?
 I'd like to summarize the contents from the lecture (with some additional sources) and structure them into three principles:
 
--   Transparency: Gathered data and code must be shared whenever possible @stodden2010 ; @gentleman2007b .
--   More robust methods: Reliance on p-values alone is insufficient. "All roads lead to Rome", and almost as many lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics @gelman2013.
--   Cultural change: incentives should reward replicability and openness. Normalize publishing research with negative outcomes to limit the effects of positive outcome bias @nosek2012.
+-   Transparency: Gathered data and code must be shared whenever possible [@stodden2010; @gentleman2007b].
+-   More robust methods: Reliance on p-values alone is insufficient. “All roads lead to Rome”, and almost as many lead to statistical significance. One solution could be preregistration (defining the data-collection and methods ahead of time), but this is not always possible to do in observational fields such as economics [@gelman2013].
+-   Cultural change: incentives should reward replicability and openness. Normalize publishing research with negative outcomes to limit the effects of positive outcome bias [@nosek2012].
 
-The effort put into [@klein2018b] shows that collaboration and openness about the scientific process can raise standards.
+The effort put into @klein2018b shows that collaboration and openness about the scientific process can raise standards.
 Still, without changes in publishing policies and funding criteria, these efforts risk staying a minority.
 
 ## Implications for Data Science in Economics
@@ -87,7 +86,7 @@ If results remain non-reproducible, the advice risks being wrong.
 
 Still, there is hope on the horizon.
 Economics journals now increasingly require data and code archives, and the general consensus in academic circles seems to be trending towards more transparency and reproducibility in research, even on an institutional level [@christensen2018 p.969].
-Lack of access to computer programs used to be a big hurdle when it came to replicating economic research [@dewald1986b p.588] but now, open source tools like Quarto documents and RStudio now exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
+Lack of access to computer programs used to be a big hurdle when it came to replicating economic research [@dewald1986b p.588] but now, open source tools like Quarto documents and RStudio exist as a way for written code and datasets to be fully integrated into the finished papers, easing the path towards reproducibility [@bauer2023].
 This allows peers to inspect the full workflow, not just the end product, and whatever code/data the original researcher made the effort to clean up and share.
 However, technical tools do not solve the full issue with publication bias and type 1 errors, and reproducibility still depends on software versions (e.g R-version, packages used, hardware etc).
 
@@ -96,19 +95,19 @@ However, technical tools do not solve the full issue with publication bias and t
 Should replication be the norm in science?
 In theory: yes, but in practice, replication of every single scientific study would be unrealistic.
 There are simply too many variables at play that could affect the end result of the study, even if instructions are followed to a tee.
-However, I still believe that it should be possible to *try* to replicate a study.
+However, I still believe that it should be possible to *try* to replicate a study.
 In my opinion, *it is* too much to ask that the scientific community blindly accepts results without being able to test the theories themselves.
 I would therefore say that *reproducibility* should be the norm.
 Even for researchers who care less about idealism and openness, working reproducibly can be beneficial [@markowetz2015a].
 
 So how do we get there?
 For one, making powerful tools like RStudio and Quarto documents free, open source and accessible to everyone is a big step.
-Including full datasets, live code blocks and the end result in the same computable Quarto document makes the process transparent and easy to reproduce, given adherance to robust research principles (like including version numbers and all packages used).
+Including full datasets, live code blocks and the end result in the same computable Quarto document makes the process transparent and easy to reproduce, given adherence to robust research principles (like including version numbers and all packages used).
 
 ## Conclusion
 
 The reproducibility crisis shows that science suffers from weaknesses both of cultural and technical origin.
-Technical barriers such as missing and/or inacessible data and poor documentation undermine reproducibility of research.
+Technical barriers such as missing and/or inaccessible data and poor documentation undermine reproducibility of research.
 Cultural barriers like publication bias, a preference for "positive" findings and a lack of incentives for replication reinforce this problem.
 
 For economics and data science, these weak spots are especially consequential.

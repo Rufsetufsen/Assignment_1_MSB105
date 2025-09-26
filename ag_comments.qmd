@@ -1,0 +1,21 @@
+---
+title: "ag Comments"
+format: html
+---
+
+## Geral remarks
+
+- A very nice little paper
+- Changed some reference from my lecture notes to original source
+- Changed some of the citations to in-line and some from in-line to end of sentence
+- Fixed some typos.
+- Changed some quotations to use the markdown construction *blockquote*.
+- Added `docx` as output format.
+- Nice and informative commit history
+
+## Tips and tricks
+
+- `citeproc: true` in YAML header forces typst to use bibtex instead of its own internal citation system. Makes it easier to generate different otput formats
+- Set `papersize: a4` outside of format such that it's the default for every relevant format
+- Same with `number-sections: true`. Gives numbered sections for every output format.
+- Both `typst`and `pdf` (pdf via latex) genrate pdf as ouput. These two engines will overwrite each others output. `out-file: "msb105_ass_1_25_tex.pdf"`in YAML gives us pdf as output from both `typst`and `pdf`. There are slight differences in the output from the two pdf engines.
